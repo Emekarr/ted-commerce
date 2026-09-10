@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <circle cx="16" cy="16" r="16" fill="#2EE59D"/>
+  <circle cx="11.2" cy="12.2" r="2.3" fill="#053E37"/>
+  <path d="M18.1 13.4 Q20.3 8.6 22.5 13.4" stroke="#053E37" strokeWidth="1.8" strokeLinecap="round" fill="none" class="ted-wink-closed"/>
+  <circle cx="20.3" cy="12.2" r="2.3" fill="#053E37" class="ted-wink-open"/>
+  <path d="M9.5 20 Q16 25.5 22.5 20" stroke="#053E37" strokeWidth="2" strokeLinecap="round" fill="none"/>
+  <style>
+    @keyframes tedWinkClosed{0%,76.92%{opacity:1}76.93%,100%{opacity:0}}
+    @keyframes tedWinkOpen{0%,76.92%{opacity:0}76.93%,100%{opacity:1}}
+    .ted-wink-closed{animation:tedWinkClosed 6.5s steps(1,end) infinite}
+    .ted-wink-open{animation:tedWinkOpen 6.5s steps(1,end) infinite}
+  </style>
+</svg>
