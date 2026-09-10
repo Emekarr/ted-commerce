@@ -1,13 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  distDir: process.env.NEXT_DIST_DIR ?? ".next",
+  output: "export",
   allowedDevOrigins: [
     "*.trycloudflare.com",
     "*.cfargotunnel.com",
     "*.cloudflare.com",
   ],
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
